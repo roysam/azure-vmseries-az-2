@@ -1,0 +1,117 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "VNETOption": {
+      "value": "Use existing VNET"
+    },
+    "VNETResourceGroup": {
+      "value": "rsam-nsw-rg"
+    },
+    "VNETName": {
+      "value": "rsam-transit-vnet"
+    },
+    "VNETPrefix": {
+      "value": "10.255.0.0/16"
+    },
+    "subnetName-Management": {
+      "value": "rsam-transit-5-sn"
+    },
+    "subnetName-Dataplane1": {
+      "value": "rsam-transit-1-sn"
+    },
+    "subnetName-Dataplane2": {
+      "value": "rsam-transit-2-sn"
+    },
+    "subnetPrefix-Management": {
+      "value": "10.255.5.0/24"
+    },
+    "subnetPrefix-Dataplane1": {
+      "value": "10.255.1.0/24"
+    },
+    "subnetPrefix-Dataplane2": {
+      "value": "10.255.2.0/24"
+    },
+    "healthProbePort": {
+      "value": "22"
+    },
+    "FW1-Name": {
+      "value": "rsam-fw-1"
+    },
+    "FW1-Zone": {
+      "value": "1"
+    },
+    "FW1-IPManagement": {
+      "value": "10.255.5.114"
+    },
+    "FW1-IPDataplane1": {
+      "value": "10.255.1.114"
+    },
+    "FW1-IPDataplane2": {
+      "value": "10.255.2.114"
+    },
+    "FW2-Name": {
+      "value": "rsam-fw-2"
+    },
+    "FW2-Zone": {
+      "value": "2"
+    },
+    "FW2-IPManagement": {
+      "value": "10.255.5.225"
+    },
+    "FW2-IPDataplane1": {
+      "value": "10.255.1.225"
+    },
+    "FW2-IPDataplane2": {
+      "value": "10.255.2.225"
+    },
+    "licenseType": {
+      "value": "byol"
+    },
+    "PANOSVersion": {
+      "value": "10.1.0"
+    },
+    "VMSize": {
+      "value": "Standard_DS3_v2"
+    },
+    "OSDiskType": {
+      "value": "StandardSSD_LRS"
+    },
+    "acceleratedNetworking": {
+      "value": "disable"
+    },
+    "applyPublicIPToManagement": {
+      "value": "Yes"
+    },
+    "applyPublicIPToDataplane1": {
+      "value": "Yes"
+    },
+    "NSGName": {
+      "value": "rsam-fw-nsg"
+    },
+    "NSGSourcePrefix": {
+      "value": "0.0.0.0/0"
+    },
+    "username": {
+      "value": "panw"
+    },
+    "password": {
+      "value": null
+    },
+    "optional-BootstrapStorageAccount": {
+      "value": null
+    },
+    "optional-BootstrapAccessKey": {
+      "value": null
+    },
+    "optional-BootstrapFileShareName": {
+      "value": null
+    },
+    "optional-BootstrapShareDirectory": {
+      "value": null
+    },
+    "optional-AppendStringToResources": {
+      "value": null
+    }
+  }
+}
